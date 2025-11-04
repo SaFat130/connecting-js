@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<script src="script.js"defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl flex justify-center bg-green-300">Halal Bank</a>
+  </div>
+  <div class="flex gap-2">
+    <!--<input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />-->
+    <div class="dropdown dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
+        <div class="w-10 rounded-full">
+          <img
+            alt="Tailwind CSS Navbar component"
+            src="img/Screenshot 2025-10-31 214820.png" />
+        </div>
+      </div>
+      <ul
+        tabindex="-1"
+        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+        <li>
+          <a class="justify-between">
+            Profile
+            <span class="badge">New</span>
+          </a>
+        </li>
+        <li><a>Settings</a></li>
+        <li><a>Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="amount">
+    <div class="navbar bg-base-100 shadow-sm">
+  <div class="flex-1">
+    <a class="btn btn-ghost text-xl flex justify-center bg-yellow-200 p-8">Balance:</a>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="calculation flex justify-center mt-2 gap-2 bg-green-300">
+
+<div class="card card-dash bg-base-100 w-96 p-5">
+  <div class="card-body">
+    <h2 class="card-title">Deposit</h2>
+    <p>If you deposit your account will be updated</p>
+  </div>
+  <div class="join flex gap-4 ml-6">
+  <div>
+    <label class="input validator join-item">
+      <input type="number" placeholder="012345..." required />
+    </label>
+    <div class="validator-hint hidden">Enter valid amount</div>
+  </div>
+  <button class="btn btn-neutral join-item">Deposit</button>
+</div>
+</div>
+
+
+
+
+
+<div class="card card-dash bg-base-100 w-96 p-5">
+  <div class="card-body">
+    <h2 class="card-title">Withdraw</h2>
+    <p>If you withdraw your account will be updated</p>
+  </div>
+  <div class="join flex gap-4 ml-6">
+  <div>
+    <label class="input validator join-item">
+      <input type="number" placeholder="012345..." required />
+    </label>
+    <div class="validator-hint hidden">Enter valid amount</div>
+  </div>
+  <button class="btn btn-neutral join-item">Withdraw</button>
+</div>
+</div>
+
+</div>
+
+
+
+<div class="overflow-x-auto mt-2 bg-purple-100">
+  <table class="table">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th></th>
+        <th>Amount</th>
+        <th>Date</th>
+        <th>Transaction Type</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- row 1 -->
+      <tr>
+        <th>1</th>
+        <td>Cy Ganderton</td>
+        <td>Quality Control Specialist</td>
+        <td>Blue</td>
+      </tr>
+      <!-- row 2 -->
+      <tr>
+        <th>2</th>
+        <td>Hart Hagerty</td>
+        <td>Desktop Support Technician</td>
+        <td>Purple</td>
+      </tr>
+      <!-- row 3 -->
+      <tr>
+        <th>3</th>
+        <td>Brice Swyre</td>
+        <td>Tax Accountant</td>
+        <td>Red</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</body>
+</html>
